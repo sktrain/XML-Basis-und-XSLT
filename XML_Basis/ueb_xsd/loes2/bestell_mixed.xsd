@@ -1,0 +1,35 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Bestellung">
+  <xs:complexType>
+    <xs:sequence>
+        <xs:element name="Adresse" type="BestellAdresse"/>
+        <xs:element name="Ware" type="WarenTyp"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="BestellAdresse">
+  <xs:sequence>
+    <xs:element name="Name" type="xs:string"/>
+    <xs:element name="Strasse" type="xs:string"/>
+    <xs:element name="Ort" type="xs:string"/>
+    <xs:element name="PLZ" type="xs:string"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="WarenTyp">
+  <xs:sequence>
+    <xs:element name="Buch" minOccurs="0" maxOccurs="unbounded">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="Titel" type="xs:string"/>
+          <xs:element name="Autor" type="xs:string"/>
+          <xs:element name="Anzahl" type="xs:string"/>
+          <xs:element name="PreisEUR" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

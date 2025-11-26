@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Bestellung>
+	<Adresse>
+		<Name>Herbert Hagedorn</Name>
+		<Strasse>Hasenweg 13</Strasse>
+		<Ort>Frankfurt/Main</Ort>
+		<PLZ>60000</PLZ>
+	</Adresse>
+	<Ware>
+		<Buch>
+			<Titel>Wolfsmond. Der dunkle Turm.</Titel>
+			<Autor>Stephen King</Autor>
+			<Anzahl>1</Anzahl>
+			<PreisEUR>15.00</PreisEUR>
+		</Buch>
+		<Buch>
+			<Titel>XML Einstieg, Praxis, Referenz</Titel>
+			<Autor>Helmut Vonhoegen</Autor>
+			<Anzahl>5</Anzahl>
+			<PreisEUR>39.90</PreisEUR>
+		</Buch>
+	</Ware>
+</Bestellung>

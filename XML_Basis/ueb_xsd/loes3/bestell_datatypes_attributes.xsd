@@ -1,0 +1,34 @@
+<!-- edited with XMLSpy v2026 (x64) (https://www.altova.com) by Christian A. Ullenboom (tutego) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Bestellung" type="BestellungTyp"/>
+	<xs:complexType name="BestellungTyp">
+		<xs:sequence>
+			<xs:element name="Adresse" type="BestellAdresse"/>
+			<xs:element name="Ware" type="WarenTyp"/>
+		</xs:sequence>
+		<xs:attribute name="bestelldatum" type="xs:date"/>
+	</xs:complexType>
+	<xs:complexType name="BestellAdresse">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Strasse" type="xs:string"/>
+			<xs:element name="Ort" type="xs:string"/>
+			<xs:element name="PLZ" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="WarenTyp">
+		<xs:sequence>
+			<xs:element name="Buch" type="BuchTyp" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BuchTyp">
+		<xs:sequence>
+			<xs:element name="Titel" type="xs:string"/>
+			<xs:element name="Autor" type="xs:string"/>
+			<xs:element name="Anzahl" type="xs:positiveInteger"/>
+			<xs:element name="PreisEUR" type="xs:decimal"/>
+		</xs:sequence>
+		<xs:attribute name="BestellNr" type="xs:positiveInteger" use="required"/>
+	</xs:complexType>
+	
+</xs:schema>
