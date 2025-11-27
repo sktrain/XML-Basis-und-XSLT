@@ -1,0 +1,8 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:include schemaLocation="E:\stephan\workspaces\xmlspy\ueb_xsd\bestell_datatypes_extern.xsd"/>
+
+<!-- globale Element-Definition entspricht dem Wurzelelement der validen XML-Dokumente -->
+<xs:element name="Bestellung" type="BestellungTyp"/>
+
+</xs:schema>

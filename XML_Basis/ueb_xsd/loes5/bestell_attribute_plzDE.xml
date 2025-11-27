@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Bestellung bestelldatum="2014-09-27">
+	<Adresse>
+		<Name>Max Mustermann</Name>
+		<Strasse>Ulmenweg 55</Strasse>
+		<Ort>Fulda</Ort>
+		<PLZ_DE>36037</PLZ_DE>
+	</Adresse>
+	<Ware>
+		<Buch BestellNr="3453865219">
+			<Titel>Wolfsmond. Der dunkle Turm.</Titel>
+			<Autor>Stephen King</Autor>
+			<Anzahl>5</Anzahl>
+			<PreisEUR>15.00</PreisEUR>
+		</Buch>
+		<Buch BestellNr="8763865219">
+			<Titel>XML Einstieg, Praxis, Referenz</Titel>
+			<Autor>Helmut Vonhoegen</Autor>
+			<Anzahl>5</Anzahl>
+			<PreisEUR>39.90</PreisEUR>
+		</Buch>
+	</Ware>
+</Bestellung>
